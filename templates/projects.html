@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Projects - Geethika A{% endblock %}
+{% block content %}
+<h2>Projects</h2>
+
+<div class="row g-3">
+  <div class="col-md-6">
+    <div id="smart-quote" class="card p-3 reveal">
+      <h4>Smart Quote Generation (Django + ML)</h4>
+      <p>A system that automates electrical quotations, calculates cost, and predicts values using Linear Regression. Features CSV import/export and supervisor assignment. Built with Django and a Python linear regression model.</p>
+      <p><strong>Tech:</strong> Python, Django, scikit-learn, Bootstrap, MySQL</p>
+      <a class="btn btn-sm btn-outline-primary" href="https://github.com/Geethika36-pro" target="_blank">Repository</a>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card p-3 reveal">
+      <h4>Flask Portfolio Website</h4>
+      <p>Personal portfolio built using Flask and Bootstrap with templates and static assets.</p>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card p-3 reveal">
+      <h4>MCQ Generator (Python)</h4>
+      <p>Python-based MCQ generator for Digital Logic & Computer Fundamentals used for revision and testing.</p>
+    </div>
+  </div>
+</div>
+{% endblock %}

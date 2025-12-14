@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Contact - Geethika A{% endblock %}
+{% block content %}
+<h2>Contact Me</h2>
+
+<form method="POST" class="reveal">
+  <div class="mb-3">
+    <label class="form-label">Name</label>
+    <input name="name" required class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Email</label>
+    <input name="email" type="email" required class="form-control" />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Message</label>
+    <textarea name="message" rows="5" required class="form-control"></textarea>
+  </div>
+  <button class="btn btn-primary">Send Message</button>
+</form>
+{% endblock %}

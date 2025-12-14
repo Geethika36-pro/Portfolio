@@ -1,0 +1,389 @@
+{% extends "base.html" %}
+{% block title %}Geethika A — Portfolio{% endblock %}
+
+{% block content %}
+<!-- MAIN single-page container -> each section uses its own inner .container for same alignment -->
+<!-- Note: base.html already wraps this main in a .container; we use inner containers to control max-width -->
+
+<!-- HERO -->
+<section id="home" class="section hero bg-light reveal">
+  <div class="container-inner">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <h1 class="display-5 mb-3">Hi, I’m <span class="accent">Geethika A</span></h1>
+        <p class="lead mb-3">MCA  Student • Salesforce Intern • Python & Django Developer</p>
+        <p>
+          <a class="btn btn-primary me-2" href="#projects">View Projects</a>
+          <a class="btn btn-outline-secondary" href="#contact">Contact Me</a>
+        </p>
+        <div class="social-buttons mt-3">
+    <a href="https://github.com/Geethika36-pro"
+       target="_blank"
+       class="btn btn-dark me-2">
+        <i class="bi bi-github"></i> GitHub
+    </a>
+
+    <a href="https://www.linkedin.com/in/geethika-a-5927152ba"
+       target="_blank"
+       class="btn btn-info text-white">
+        <i class="bi bi-linkedin"></i> LinkedIn
+    </a>
+</div>
+
+
+        <ul class="list-inline meta mt-3">
+          <li class="list-inline-item">📍 India</li>
+          <li class="list-inline-item">🎓 BCA</li>
+          <li class="list-inline-item">💼 Impaqtive Intern</li>
+        </ul>
+      </div>
+
+      <div class="col-lg-5 text-center mt-4 mt-lg-0">
+        <img src="{{ url_for('static', filename='images/photo1.jpg') }}" alt="profile" class="profile-img rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <div class="container-inner">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">About Me</h2>
+      </div>
+    </div>
+
+    <div class="row align-items-start mt-3">
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <p>
+            I am Geethika A, an MCA student at Rajagiri College of Social Sciences with practical experience in Python, Django, Flask, and machine learning, along with Salesforce Trailhead exposure. I enjoy building user-friendly applications and automation tools, focusing on clean development practices and solving real-world problems through smart, efficient solutions.
+          </p>
+        </div>
+
+        <div class="card p-3 mb-3">
+          <h5 class="mb-2">Activities</h5>
+          <ul class="mb-0">
+            <li>Classical dance — 10+ years (performed during NAAC visit)</li>
+            <li>Vice Captain — School youth festival</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card p-3 mb-3">
+          <h5 class="mb-2">Career Objective</h5>
+          <p class="mb-0">To leverage my technical skills and passion for innovation to contribute to impactful IT projects while continuously learning and adapting to emerging technologies. I aim to apply my knowledge of software development, web technologies, and problem-solving to build efficient, user-centric solutions.</p>
+        </div>
+        <div class="card p-3">
+          <h5 class="mb-2">Tech Summary</h5>
+          <ul class="mb-0">
+            <li>Python, Java, C</li>
+            <li>Django, Flask</li>
+            <li>MySQL, Git, Salesforce Trailhead</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section bg-light reveal">
+  <div class="container-inner">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Education</h2>
+      </div>
+    </div>
+
+    <div class="timeline mt-3">
+
+      <!-- CURRENT MCA -->
+      <div class="timeline-item current">
+        <h5>MCA — Currently Pursuing</h5>
+        <p class="mb-0">Rajagiri College of Social Sciences</p>
+      </div>
+
+      <!-- COMPLETED BCA -->
+      <div class="timeline-item">
+        <h5>BCA — Completed</h5>
+        <p class="mb-0">Saintgits College of Applied Sciences — 82.1% (2024)</p>
+      </div>
+
+      <!-- 12th -->
+      <div class="timeline-item">
+        <h5>12th (CBSE)</h5>
+        <p class="mb-0">St John The Baptist's English School — 86.8% (2022)</p>
+      </div>
+
+      <!-- 10th -->
+      <div class="timeline-item">
+        <h5>10th (CBSE)</h5>
+        <p class="mb-0">St John The Baptist's English School — 85.2% (2020)</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <div class="container-inner">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Skills</h2>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-6">
+        <h5>Technical</h5>
+
+        <div class="skill mb-3">
+          <div class="skill-name">Python</div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+        </div>
+
+        <div class="skill mb-3">
+          <div class="skill-name">Django / Flask</div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+        </div>
+
+        <div class="skill mb-3">
+          <div class="skill-name">Salesforce Trailhead</div>
+          <div class="skill-bar"><div class="skill-fill" data-fill="75"></div></div>
+        </div>
+      </div>
+     <div class="col-md-6">
+  <div class="soft-skills-box">
+    <h4 class="soft-skills-title">Soft Skills</h4>
+    <ul class="soft-skills-list">
+      <li>Leadership</li>
+      <li>Communication</li>
+      <li>Time Management</li>
+    </ul>
+  </div>
+</div>
+
+
+<!-- PROJECTS -->
+<!-- PROJECTS -->
+<section id="projects" class="section bg-light reveal">
+  <div class="container-inner">
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Projects</h2>
+      </div>
+    </div>
+
+    <div class="row gx-0 mt-3">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 pe-md-4 mb-4">
+        <div class="card project-card h-100">
+          <h5>Smart Quote Generation (Django + ML)</h5>
+          <p>
+            A web-based system that automates electrical quotation generation
+            for contractors. The application calculates material and labor
+            costs, predicts quotation values using a Linear Regression model,
+            and assigns supervisors based on project requirements.
+          </p>
+          <p>
+            Built using Django with a structured backend, the system improves
+            accuracy, reduces manual effort, and ensures faster client quote
+            delivery.
+          </p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 ps-md-4 mb-4">
+        <div class="card project-card h-100">
+          <h5>EbankSecure — ML Phishing Detection</h5>
+          <p>
+            A machine learning–based phishing detection system designed to
+            identify malicious e-banking websites. The model analyzes URL
+            features such as HTTPS usage, domain age, redirection patterns,
+            and special characters.
+          </p>
+          <p>
+            The system helps users detect fraudulent websites in real time,
+            enhancing online banking security and user awareness against
+            phishing attacks.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+    </div>
+  </div>
+</section>
+<section id="certifications" class="section bg-light reveal">
+  <div class="container-inner">
+
+    <div class="row">
+      <div class="col-12">
+        <h2 class="section-title">Certifications</h2>
+      </div>
+    </div>
+
+    <div class="row g-4 mt-3">
+
+      <!-- AI Fundamentals -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>AI Fundamentals</h5>
+          <a href="{{ url_for('static', filename='certificates/Ai fundamentals.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- AI Implementation -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>AI Implementation</h5>
+          <a href="{{ url_for('static', filename='certificates/Ai implementation.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- AWS Forage -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>AWS Forage – Virtual Internship</h5>
+          <a href="{{ url_for('static', filename='certificates/AWS forage.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Cloud Computing -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>Cloud Computing Workshop</h5>
+          <a href="{{ url_for('static', filename='certificates/Cloud computing.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Cybersecurity & IoT -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>Cybersecurity & IoT</h5>
+          <a href="{{ url_for('static', filename='certificates/Cybersecurity and IoT.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Data Literacy -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>Data Literacy Certification</h5>
+          <a href="{{ url_for('static', filename='certificates/Data literacy.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Ethical Hacking Associate -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>Ethical Hacking Associate</h5>
+          <a href="{{ url_for('static', filename='certificates/Ethical hacking associate.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- Microsoft Excel -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>Microsoft Excel Certification</h5>
+          <a href="{{ url_for('static', filename='certificates/Microsoft excel.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+      <!-- TCSion -->
+      <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+        <div class="card project-card p-3 h-100 cert-card">
+          <h5>TCSion Certification</h5>
+          <a href="{{ url_for('static', filename='certificates/tcsion.pdf') }}"
+             target="_blank" class="btn btn-primary btn-sm mt-2">
+            View Certificate
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </div>
+  </div>
+</section>
+
+
+
+<!-- CONTACT -->
+<section id="contact" class="section bg-light reveal">
+  <div class="container-inner">
+    <div class="row">
+      <div class="col-12"><h2 class="section-title">Contact</h2></div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-md-8">
+        <div class="card p-3">
+          <form method="POST" action="/contact">
+            <div class="mb-3">
+              <label class="form-label">Name</label>
+              <input name="name" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Email</label>
+              <input name="email" type="email" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Message</label>
+              <textarea name="message" rows="4" class="form-control" required></textarea>
+            </div>
+
+            <button class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-4 mt-3 mt-md-0">
+        <div class="card p-3">
+          <h6>Get in touch</h6>
+          <p class="mb-0">Email:geethikaa15@gmail.com<br>Phone: +91 98765 43210</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
