@@ -32,12 +32,11 @@ body {
 
 /* ---------- SECTION LAYOUT ---------- */
 .section {
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding: 32px 0;
 }
 
 /* section title style */
-.section-title {
+section-title {
   color: var(--accent);
   font-size: 32px;
   margin-bottom: 8px;
@@ -134,5 +133,22 @@ body {
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+}
+.section {
+  margin-top: 80px;
+}
+
+.section h2 {
+  font-weight: 600;
+}
+#internships h2 {
+  color: #0d6efd;
+  font-weight: 600;
+}
+#education .timeline {
+  margin-top: 16px;
+}
+.section + .section {
+  margin-top: 0;
 }
 
